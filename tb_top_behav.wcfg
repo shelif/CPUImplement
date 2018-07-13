@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ahblite_axi_bridge_pkg" />
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="127641666666fs"></ZoomStartTime>
+      <ZoomEndTime time="128395666667fs"></ZoomEndTime>
+      <Cursor1Time time="128270000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="111"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/tb_top/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/confreg/num_data" type="array">
+      <obj_property name="ElementShortName">num_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">num_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/pcF" type="array">
+      <obj_property name="ElementShortName">pcF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/instrF" type="array">
+      <obj_property name="ElementShortName">instrF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instrF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/aluoutM" type="array">
+      <obj_property name="ElementShortName">aluoutM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aluoutM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/readdataM" type="array">
+      <obj_property name="ElementShortName">readdataM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">readdataM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/writedataM" type="array">
+      <obj_property name="ElementShortName">writedataM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">writedataM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/memsel/sel" type="array">
+      <obj_property name="ElementShortName">sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/alu/div_result" type="array">
+      <obj_property name="ElementShortName">div_result[63:0]</obj_property>
+      <obj_property name="ObjectShortName">div_result[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/h/stall_special" type="logic">
+      <obj_property name="ElementShortName">stall_special</obj_property>
+      <obj_property name="ObjectShortName">stall_special</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/h/stallF" type="logic">
+      <obj_property name="ElementShortName">stallF</obj_property>
+      <obj_property name="ObjectShortName">stallF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/h/flushF" type="logic">
+      <obj_property name="ElementShortName">flushF</obj_property>
+      <obj_property name="ObjectShortName">flushF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/h/stallF" type="logic">
+      <obj_property name="ElementShortName">stallF</obj_property>
+      <obj_property name="ObjectShortName">stallF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/rf/rf[0]" type="array">
+      <obj_property name="ElementShortName">[0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/rf/rf[8]" type="array">
+      <obj_property name="ElementShortName">[8][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/rf/rf[16]" type="array">
+      <obj_property name="ElementShortName">[16][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/rf/rf[18]" type="array">
+      <obj_property name="ElementShortName">[18][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[18][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/rf/rf[31]" type="array">
+      <obj_property name="ElementShortName">[31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/memenM" type="logic">
+      <obj_property name="ElementShortName">memenM</obj_property>
+      <obj_property name="ObjectShortName">memenM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dram_port/memenM" type="logic">
+      <obj_property name="ElementShortName">memenM</obj_property>
+      <obj_property name="ObjectShortName">memenM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/mem_wr" type="logic">
+      <obj_property name="ElementShortName">mem_wr</obj_property>
+      <obj_property name="ObjectShortName">mem_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dram_port/mem_ben" type="array">
+      <obj_property name="ElementShortName">mem_ben[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_ben[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dram_port/selM" type="array">
+      <obj_property name="ElementShortName">selM[3:0]</obj_property>
+      <obj_property name="ObjectShortName">selM[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dram_port/mem_wdata" type="array">
+      <obj_property name="ElementShortName">mem_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/sramlike_to_ahb/if_ahb_valid" type="logic">
+      <obj_property name="ElementShortName">if_ahb_valid</obj_property>
+      <obj_property name="ObjectShortName">if_ahb_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/sramlike_to_ahb/if_wait_ahb_data" type="logic">
+      <obj_property name="ElementShortName">if_wait_ahb_data</obj_property>
+      <obj_property name="ObjectShortName">if_wait_ahb_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/sramlike_to_ahb/if_i_sram_valid" type="logic">
+      <obj_property name="ElementShortName">if_i_sram_valid</obj_property>
+      <obj_property name="ObjectShortName">if_i_sram_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/sramlike_to_ahb/mem_i_sram_valid" type="logic">
+      <obj_property name="ElementShortName">mem_i_sram_valid</obj_property>
+      <obj_property name="ObjectShortName">mem_i_sram_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/h/stallF" type="logic">
+      <obj_property name="ElementShortName">stallF</obj_property>
+      <obj_property name="ObjectShortName">stallF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/h/stallD" type="logic">
+      <obj_property name="ElementShortName">stallD</obj_property>
+      <obj_property name="ObjectShortName">stallD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/h/flushF" type="logic">
+      <obj_property name="ElementShortName">flushF</obj_property>
+      <obj_property name="ObjectShortName">flushF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/h/stall_special" type="logic">
+      <obj_property name="ElementShortName">stall_special</obj_property>
+      <obj_property name="ObjectShortName">stall_special</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/s_stall_special_judgeM" type="logic">
+      <obj_property name="ElementShortName">s_stall_special_judgeM</obj_property>
+      <obj_property name="ObjectShortName">s_stall_special_judgeM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/l_stall_special_judgeM" type="logic">
+      <obj_property name="ElementShortName">l_stall_special_judgeM</obj_property>
+      <obj_property name="ObjectShortName">l_stall_special_judgeM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/stall_special" type="logic">
+      <obj_property name="ElementShortName">stall_special</obj_property>
+      <obj_property name="ObjectShortName">stall_special</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/soc_lite/mips/dp/instrF" type="array">
+      <obj_property name="ElementShortName">instrF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instrF[31:0]</obj_property>
+   </wvobject>
+</wave_config>

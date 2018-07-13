@@ -1,0 +1,2 @@
+ahblite_axi_bridge_0.vhd,vhdl,xil_defaultlib,../../../ip/ahblite_axi_bridge_0/sim/ahblite_axi_bridge_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

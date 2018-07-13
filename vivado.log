@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Apr  2 17:22:27 2018
+# Process ID: 18648
+# Current directory: F:/project_test/project_summary
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15660 F:\project_test\project_summary\project_summary.xpr
+# Log file: F:/project_test/project_summary/vivado.log
+# Journal file: F:/project_test/project_summary\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/project_test/project_summary/project_summary.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/project_test/nodaelay_coe/data_ram.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado2017.3/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 776.820 ; gain = 74.625
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  2 17:28:25 2018...

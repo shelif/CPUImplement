@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Jan  5 12:53:22 2018
+# Process ID: 8972
+# Current directory: F:/project_test/project_summary
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13608 F:\project_test\project_summary\project_summary.xpr
+# Log file: F:/project_test/project_summary/vivado.log
+# Journal file: F:/project_test/project_summary\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/project_test/project_summary/project_summary.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config F:/project_test/project_summary/tb_top_behav.wcfg
+source tb_top.tcl
+run 1000 us
+relaunch_sim
+run 1000 us
+close_sim

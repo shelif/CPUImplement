@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1514994506">
+  <File Type="PA-TCL" Name="mips.tcl"/>
+  <File Type="REPORTS-TCL" Name="mips_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mips.vds"/>
+  <File Type="RDS-UTIL" Name="mips_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="soc_lite_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mips.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/adder.v"/>
+        <Attr Name="ImportTime" Val="1510280214"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/defines.vh">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/aludec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/aludec.v"/>
+        <Attr Name="ImportTime" Val="1514869075"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/calculate_assign.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/calculate_assign.v"/>
+        <Attr Name="ImportTime" Val="1514862840"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/controller.v"/>
+        <Attr Name="ImportTime" Val="1514889723"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/cp0_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/new/cp0_reg.v"/>
+        <Attr Name="ImportTime" Val="1514624266"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/datapath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/datapath.v"/>
+        <Attr Name="ImportTime" Val="1514895137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/div.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/div.v"/>
+        <Attr Name="ImportTime" Val="1513908857"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/dram_port.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/new/dram_port.v"/>
+        <Attr Name="ImportTime" Val="1514896110"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/eqcmp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/eqcmp.v"/>
+        <Attr Name="ImportTime" Val="1513858486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/exception.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/new/exception.v"/>
+        <Attr Name="ImportTime" Val="1514625156"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/flopenr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/flopenr.v"/>
+        <Attr Name="ImportTime" Val="1514033767"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/flopenrc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/flopenrc.v"/>
+        <Attr Name="ImportTime" Val="1514033886"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/flopr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/flopr.v"/>
+        <Attr Name="ImportTime" Val="1514102087"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/floprc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/floprc.v"/>
+        <Attr Name="ImportTime" Val="1513771512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/hazard.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/hazard.v"/>
+        <Attr Name="ImportTime" Val="1514895033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/hilo_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/hilo_reg.v"/>
+        <Attr Name="ImportTime" Val="1513049653"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/iram_port.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/new/iram_port.v"/>
+        <Attr Name="ImportTime" Val="1514896123"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/maindec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/maindec.v"/>
+        <Attr Name="ImportTime" Val="1514879009"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/memsel.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/new/memsel.v"/>
+        <Attr Name="ImportTime" Val="1514427621"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/mux2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/mux2.v"/>
+        <Attr Name="ImportTime" Val="1513254007"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/mux3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/mux3.v"/>
+        <Attr Name="ImportTime" Val="1511449701"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/regfile.v"/>
+        <Attr Name="ImportTime" Val="1514621678"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/signext.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/signext.v"/>
+        <Attr Name="ImportTime" Val="1514036165"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/sl2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/sl2.v"/>
+        <Attr Name="ImportTime" Val="1513563339"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/mips.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/imports/project/rtl/mips.v"/>
+        <Attr Name="ImportTime" Val="1514895763"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/data_ram/data_ram.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/xilinx_ip/data_ram/data_ram.xci"/>
+        <Attr Name="ImportTime" Val="1514905132"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/xilinx_ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0.xci"/>
+        <Attr Name="ImportTime" Val="1514897598"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/confreg.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/new/confreg.v"/>
+        <Attr Name="ImportTime" Val="1514896204"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/sramlike_to_ahb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/new/sramlike_to_ahb.v"/>
+        <Attr Name="ImportTime" Val="1514896265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/soc_lite_top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/new/soc_lite_top.v"/>
+        <Attr Name="ImportTime" Val="1514895930"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/data_ram.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/xilinx_ip/data_ram.xcix"/>
+        <Attr Name="ImportTime" Val="1514905133"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ahblite_axi_bridge_0.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/xilinx_ip/ahblite_axi_bridge_0.xcix"/>
+        <Attr Name="ImportTime" Val="1514897599"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_pll.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/xilinx_ip/clk_pll.xcix"/>
+        <Attr Name="ImportTime" Val="1514897599"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_pll/clk_pll.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/xilinx_ip/clk_pll/clk_pll.xci"/>
+        <Attr Name="ImportTime" Val="1514897598"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/nodelay_ram_coe/data_ram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../nodaelay_coe/data_ram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sim_ram_coe/data_ram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mips"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/cpu.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

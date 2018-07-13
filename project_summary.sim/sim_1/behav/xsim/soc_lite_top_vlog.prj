@@ -1,0 +1,40 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_summary.srcs/sources_1/ip/clk_pll" --include "F:/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l/project_1.6_j_b_s_l.srcs/sources_1/new" --include "../../../../project_summary.srcs/sources_1/imports/new" \
+"../../../../project_summary.ip_user_files/ip/data_ram/sim/data_ram.v" \
+"../../../../project_summary.ip_user_files/ip/inst_ram/sim/inst_ram.v" \
+"../../../../project_summary.ip_user_files/ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../project_summary.ip_user_files/ip/clk_pll/clk_pll.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/adder.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/aludec.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/calculate_assign.v" \
+"../../../../project_summary.srcs/sources_1/imports/new/confreg.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/controller.v" \
+"../../../../project_summary.srcs/sources_1/imports/new/cp0_reg.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/datapath.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/div.v" \
+"../../../../project_summary.srcs/sources_1/imports/new/dram_port.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/eqcmp.v" \
+"../../../../project_summary.srcs/sources_1/imports/new/exception.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/flopenr.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/flopenrc.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/flopr.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/floprc.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/hazard.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/hilo_reg.v" \
+"../../../../project_summary.srcs/sources_1/imports/new/iram_port.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/maindec.v" \
+"../../../../project_summary.srcs/sources_1/imports/new/memsel.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/mips.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/mux2.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/mux3.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/regfile.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/signext.v" \
+"../../../../project_summary.srcs/sources_1/imports/rtl/sl2.v" \
+"../../../../project_summary.srcs/sources_1/imports/new/sramlike_to_ahb.v" \
+"../../../../project_summary.srcs/sources_1/imports/new/soc_lite_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

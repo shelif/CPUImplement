@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Jan  4 09:16:38 2018
+# Process ID: 18752
+# Current directory: F:/project_test/project_summary
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11352 F:\project_test\project_summary\project_summary.xpr
+# Log file: F:/project_test/project_summary/vivado.log
+# Journal file: F:/project_test/project_summary\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/project_test/project_summary/project_summary.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top soc_lite_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config F:/project_test/project_summary/tb_top_behav.wcfg
+source tb_top.tcl
+run 1000 us
+restart
+run 1000 us
+save_wave_config {F:/project_test/project_summary/tb_top_behav.wcfg}

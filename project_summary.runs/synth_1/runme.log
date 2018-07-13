@@ -1,0 +1,1203 @@
+
+*** Running vivado
+    with args -log mips.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source mips.tcl -notrace
+Command: synth_design -top mips -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17096 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 380.418 ; gain = 96.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mips.v:22]
+INFO: [Synth 8-638] synthesizing module 'controller' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'maindec' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/maindec.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/maindec.v:59]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/maindec.v:65]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (1#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/maindec.v:23]
+INFO: [Synth 8-638] synthesizing module 'aludec' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/aludec.v:22]
+WARNING: [Synth 8-151] case item 32'b01000010000000000000000000011000 is unreachable [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/aludec.v:94]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/aludec.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/aludec.v:98]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (2#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/aludec.v:22]
+INFO: [Synth 8-638] synthesizing module 'flopr' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopr.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (3#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopr.v:23]
+INFO: [Synth 8-638] synthesizing module 'flopenrc' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+	Parameter WIDTH bound to: 21 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc' (4#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+INFO: [Synth 8-638] synthesizing module 'flopenrc__parameterized0' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc__parameterized0' (4#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'd' does not match port width (11) of module 'flopenrc__parameterized0' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/controller.v:87]
+WARNING: [Synth 8-689] width (7) of port connection 'q' does not match port width (11) of module 'flopenrc__parameterized0' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/controller.v:88]
+INFO: [Synth 8-638] synthesizing module 'floprc' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/floprc.v:23]
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'floprc' (5#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/floprc.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'd' does not match port width (11) of module 'floprc' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/controller.v:92]
+WARNING: [Synth 8-689] width (5) of port connection 'q' does not match port width (11) of module 'floprc' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/controller.v:93]
+INFO: [Synth 8-638] synthesizing module 'flopr__parameterized0' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopr.v:23]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr__parameterized0' (5#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopr.v:23]
+INFO: [Synth 8-256] done synthesizing module 'controller' (6#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'datapath' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/datapath.v:23]
+INFO: [Synth 8-638] synthesizing module 'hazard' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/hazard.v:23]
+INFO: [Synth 8-256] done synthesizing module 'hazard' (7#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/hazard.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mux2.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (8#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mux2.v:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/regfile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (9#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/regfile.v:23]
+INFO: [Synth 8-638] synthesizing module 'flopenr' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenr.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenr' (10#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenr.v:23]
+INFO: [Synth 8-638] synthesizing module 'adder' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'adder' (11#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'flopenrc__parameterized1' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc__parameterized1' (11#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+INFO: [Synth 8-638] synthesizing module 'flopenrc__parameterized2' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc__parameterized2' (11#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+INFO: [Synth 8-638] synthesizing module 'signext' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/signext.v:23]
+INFO: [Synth 8-256] done synthesizing module 'signext' (12#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/signext.v:23]
+INFO: [Synth 8-638] synthesizing module 'sl2' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/sl2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sl2' (13#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/sl2.v:23]
+INFO: [Synth 8-638] synthesizing module 'eqcmp' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/eqcmp.v:23]
+INFO: [Synth 8-256] done synthesizing module 'eqcmp' (14#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/eqcmp.v:23]
+INFO: [Synth 8-638] synthesizing module 'flopenrc__parameterized3' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc__parameterized3' (14#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+INFO: [Synth 8-638] synthesizing module 'flopenrc__parameterized4' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc__parameterized4' (14#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux3' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mux3.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux3' (15#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mux3.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux3__parameterized0' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mux3.v:23]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux3__parameterized0' (15#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mux3.v:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:52]
+INFO: [Synth 8-256] done synthesizing module 'alu' (16#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:23]
+INFO: [Synth 8-638] synthesizing module 'div' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:35]
+WARNING: [Synth 8-567] referenced signal 'rst' should be on the sensitivity list [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:60]
+WARNING: [Synth 8-567] referenced signal 'state' should be on the sensitivity list [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:60]
+WARNING: [Synth 8-567] referenced signal 'start_i' should be on the sensitivity list [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:60]
+WARNING: [Synth 8-567] referenced signal 'annul_i' should be on the sensitivity list [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:60]
+WARNING: [Synth 8-567] referenced signal 'opdata2_i' should be on the sensitivity list [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:60]
+WARNING: [Synth 8-567] referenced signal 'signed_div_i' should be on the sensitivity list [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:60]
+WARNING: [Synth 8-567] referenced signal 'opdata1_i' should be on the sensitivity list [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:60]
+WARNING: [Synth 8-567] referenced signal 'cnt' should be on the sensitivity list [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:60]
+WARNING: [Synth 8-567] referenced signal 'div_temp' should be on the sensitivity list [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:60]
+WARNING: [Synth 8-567] referenced signal 'dividend' should be on the sensitivity list [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:60]
+INFO: [Synth 8-256] done synthesizing module 'div' (17#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:35]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mux2.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (17#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mux2.v:23]
+INFO: [Synth 8-638] synthesizing module 'flopenrc__parameterized5' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopenrc__parameterized5' (17#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/flopenrc.v:23]
+INFO: [Synth 8-638] synthesizing module 'memsel' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/memsel.v:23]
+INFO: [Synth 8-226] default block is never used [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/memsel.v:64]
+INFO: [Synth 8-226] default block is never used [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/memsel.v:88]
+INFO: [Synth 8-226] default block is never used [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/memsel.v:97]
+INFO: [Synth 8-256] done synthesizing module 'memsel' (18#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/memsel.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'adelM' does not match port width (1) of module 'memsel' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/datapath.v:269]
+WARNING: [Synth 8-689] width (4) of port connection 'adesM' does not match port width (1) of module 'memsel' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/datapath.v:269]
+INFO: [Synth 8-638] synthesizing module 'exception' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/exception.v:23]
+INFO: [Synth 8-256] done synthesizing module 'exception' (19#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/exception.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'adel' does not match port width (1) of module 'exception' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/datapath.v:270]
+WARNING: [Synth 8-689] width (4) of port connection 'ades' does not match port width (1) of module 'exception' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/datapath.v:270]
+INFO: [Synth 8-638] synthesizing module 'floprc__parameterized0' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/floprc.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'floprc__parameterized0' (19#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/floprc.v:23]
+INFO: [Synth 8-638] synthesizing module 'floprc__parameterized1' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/floprc.v:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'floprc__parameterized1' (19#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/floprc.v:23]
+INFO: [Synth 8-638] synthesizing module 'floprc__parameterized2' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/floprc.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'floprc__parameterized2' (19#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/floprc.v:23]
+INFO: [Synth 8-638] synthesizing module 'floprc__parameterized3' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/floprc.v:23]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'floprc__parameterized3' (19#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/floprc.v:23]
+INFO: [Synth 8-638] synthesizing module 'hilo_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/hilo_reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'hilo_reg' (20#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/hilo_reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'cp0_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/cp0_reg.v:24]
+INFO: [Synth 8-256] done synthesizing module 'cp0_reg' (21#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/cp0_reg.v:24]
+WARNING: [Synth 8-350] instance 'cp0_reg' of module 'cp0_reg' requires 17 connections, but only 15 given [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/datapath.v:287]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (22#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/datapath.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'adelM' does not match port width (4) of module 'datapath' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mips.v:111]
+WARNING: [Synth 8-689] width (1) of port connection 'adesM' does not match port width (4) of module 'datapath' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mips.v:111]
+INFO: [Synth 8-638] synthesizing module 'iram_port' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/iram_port.v:23]
+INFO: [Synth 8-256] done synthesizing module 'iram_port' (23#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/iram_port.v:23]
+INFO: [Synth 8-638] synthesizing module 'dram_port' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/dram_port.v:23]
+INFO: [Synth 8-256] done synthesizing module 'dram_port' (24#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/dram_port.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mips' (25#1) [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/mips.v:22]
+WARNING: [Synth 8-3331] design dram_port has unconnected port mem_addr_ok
+WARNING: [Synth 8-3331] design dram_port has unconnected port mem_data_ok
+WARNING: [Synth 8-3331] design iram_port has unconnected port memen
+WARNING: [Synth 8-3331] design exception has unconnected port except[1]
+WARNING: [Synth 8-3331] design exception has unconnected port except[0]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[31]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[30]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[29]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[28]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[27]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[26]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[25]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[24]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[23]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[22]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[21]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[20]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[19]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[18]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[17]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[16]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[7]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[6]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[5]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[4]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[3]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_status[2]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[31]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[30]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[29]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[28]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[27]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[26]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[25]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[24]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[23]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[22]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[21]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[20]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[19]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[18]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[17]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[16]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[7]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[6]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[5]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[4]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[3]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[2]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[1]
+WARNING: [Synth 8-3331] design exception has unconnected port cp0_cause[0]
+WARNING: [Synth 8-3331] design div has unconnected port clk
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design hazard has unconnected port stall_by_iram
+WARNING: [Synth 8-3331] design hazard has unconnected port branchD
+WARNING: [Synth 8-3331] design hazard has unconnected port invalidD
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[31]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[30]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[29]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[28]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[27]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[26]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[25]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[24]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[23]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[22]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[21]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[20]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[19]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[18]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[17]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[16]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[15]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[14]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[13]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[12]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[11]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[10]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[9]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[8]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[7]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[6]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[5]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[4]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[3]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[2]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[1]
+WARNING: [Synth 8-3331] design maindec has unconnected port instr[0]
+WARNING: [Synth 8-3331] design controller has unconnected port adelM
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 423.504 ; gain = 140.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 423.504 ; gain = 140.082
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/jizu_project/project_summary/project_summary.srcs/constrs_1/new/cpu.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [G:/jizu_project/project_summary/project_summary.srcs/constrs_1/new/cpu.xdc:3]
+Finished Parsing XDC File [G:/jizu_project/project_summary/project_summary.srcs/constrs_1/new/cpu.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/jizu_project/project_summary/project_summary.srcs/constrs_1/new/cpu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mips_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mips_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 761.914 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 761.914 ; gain = 478.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 761.914 ; gain = 478.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 761.914 ; gain = 478.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "controls" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "controls" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "invalid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "alu_control" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "alu_control" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "newpcW" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:52]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:52]
+INFO: [Synth 8-5546] ROM "stall_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hilo_writeE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_writeE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "prod" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "sel" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adelM" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "finaldata" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "compare_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "status_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cause_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "epc_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "badvaddr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element count_o_reg was removed.  [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/cp0_reg.v:53]
+INFO: [Synth 8-5544] ROM "exceptF" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "if_ben" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'controls_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/maindec.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'invalid_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/maindec.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_control_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/aludec.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'newpcW_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/hazard.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'hilo_o_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:73]
+WARNING: [Synth 8-327] inferring latch for variable 'hilo_writeE_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_writeE_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'overflow_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:134]
+WARNING: [Synth 8-327] inferring latch for variable 'start_div_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'signed_div_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'stall_div_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'tmp_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:80]
+WARNING: [Synth 8-327] inferring latch for variable 'prod_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:88]
+WARNING: [Synth 8-327] inferring latch for variable 'result_o_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'ready_o_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'dividend_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'divisor_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'cnt_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/div.v:73]
+WARNING: [Synth 8-327] inferring latch for variable 'finaldata_reg' [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/memsel.v:80]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 761.914 ; gain = 478.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 11    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 16    
+	               21 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	                64x64  Multipliers := 1     
++---Muxes : 
+	   4 Input     65 Bit        Muxes := 2     
+	   2 Input     65 Bit        Muxes := 5     
+	   4 Input     64 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 3     
+	  36 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 48    
+	  10 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 4     
+	  21 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 6     
+	   6 Input     32 Bit        Muxes := 3     
+	   7 Input     24 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 8     
+	  13 Input     11 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 1     
+	   7 Input     11 Bit        Muxes := 1     
+	  29 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   3 Input      8 Bit        Muxes := 1     
+	  26 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	  36 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 2     
+	  26 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   5 Input      2 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 66    
+	  13 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 8     
+	  10 Input      1 Bit        Muxes := 5     
+	  36 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 6     
+	  13 Input     11 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 1     
+	   7 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	  13 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module aludec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  29 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	  26 Input      8 Bit        Muxes := 1     
+	  26 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module flopenrc 
+Detailed RTL Component Info : 
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flopenrc__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module floprc 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module flopr__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module hazard 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module flopenr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module flopenrc__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flopenrc__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module signext 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module eqcmp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module flopenrc__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flopenrc__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module mux3__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     64 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Multipliers : 
+	                64x64  Multipliers := 1     
++---Muxes : 
+	  36 Input     33 Bit        Muxes := 1     
+	  21 Input     32 Bit        Muxes := 1     
+	  36 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  36 Input      1 Bit        Muxes := 9     
+Module div 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   4 Input     65 Bit        Muxes := 2     
+	   2 Input     65 Bit        Muxes := 5     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 3     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module flopenrc__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module memsel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module exception 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+Module floprc__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module floprc__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module floprc__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module floprc__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module cp0_reg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   6 Input     32 Bit        Muxes := 3     
+	  10 Input     32 Bit        Muxes := 3     
+	   7 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 4     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module iram_port 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module dram_port 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hilo_writeE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_writeE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "stall_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "prod" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/rtl/calculate_assign.v:88]
+DSP Report: Generating DSP O190, operation Mode is: A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: PCIN+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: PCIN+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: PCIN+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: PCIN+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: PCIN+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: PCIN+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: Generating DSP O190, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator O190 is absorbed into DSP O190.
+DSP Report: operator O190 is absorbed into DSP O190.
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element count_o_reg was removed.  [G:/jizu_project/project_summary/project_summary.srcs/sources_1/imports/new/cp0_reg.v:53]
+INFO: [Synth 8-5544] ROM "exceptF" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "c/md/controls" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design mips has port if_addr[31] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_addr[30] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_addr[29] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[31] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[30] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[29] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[28] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[27] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[26] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[25] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[24] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[23] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[22] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[21] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[20] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[19] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[18] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[17] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[16] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[15] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[14] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[13] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[12] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[11] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[10] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[9] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[8] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[7] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[6] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[5] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[4] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[3] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[2] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[1] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wdata[0] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port if_wr driven by constant 0
+WARNING: [Synth 8-3917] design mips has port mem_addr[31] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port mem_addr[30] driven by constant 0
+WARNING: [Synth 8-3917] design mips has port mem_addr[29] driven by constant 0
+WARNING: [Synth 8-3331] design div has unconnected port clk
+WARNING: [Synth 8-3331] design hazard has unconnected port stall_by_iram
+WARNING: [Synth 8-3331] design hazard has unconnected port branchD
+WARNING: [Synth 8-3331] design hazard has unconnected port invalidD
+WARNING: [Synth 8-3331] design mips has unconnected port mem_addr_ok
+WARNING: [Synth 8-3331] design mips has unconnected port mem_data_ok
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[0]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[0]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[0]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[1]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[1]' (FDSE_1) to 'dp/cp0_reg/config_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[1]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[2]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[2]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[3]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[3]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[4]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[4]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[5]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[5]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[6]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[7]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[6]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp/cp0_reg/\cause_o_reg[6] )
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[7]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[8]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[7]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[8]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[7]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[8]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[8]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[9]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[8]' (FDSE_1) to 'dp/cp0_reg/config_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[9]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[9]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[10]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[10]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[11]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[11]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[12]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[12]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[13]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[13]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[14]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[16]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[14]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[16]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[15]' (FDSE_1) to 'dp/cp0_reg/prid_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[15]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[16]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[16]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[17]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[16]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[17]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[16]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[17]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[17]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[18]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[17]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[18]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[17]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[18]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[18]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[19]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[18]' (FDSE_1) to 'dp/cp0_reg/prid_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[18]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[19]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[19]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[20]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[19]' (FDSE_1) to 'dp/cp0_reg/prid_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[19]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[20]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[20]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[20]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[20]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[21]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[21]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[21]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[22]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[23]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dp/cp0_reg/\prid_o_reg[22] )
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[23]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[24]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[23]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[24]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[24]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[24]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[24]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[25]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[26]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[25]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[26]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[25]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[26]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[26]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[27]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[26]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[27]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[26]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[27]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[27]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[27]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[27]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[28]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[29]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[28]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[29]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[28]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[29]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[29]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[29]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[29]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[30]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/prid_o_reg[30]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/cause_o_reg[30]' (FDRE_1) to 'dp/cp0_reg/config_o_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dp/cp0_reg/config_o_reg[31]' (FDRE_1) to 'dp/cp0_reg/prid_o_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp/cp0_reg/\prid_o_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\c/md/invalid_reg )
+INFO: [Synth 8-3886] merging instance 'c/md/controls_reg[6]' (LD) to 'c/md/controls_reg[0]'
+INFO: [Synth 8-3886] merging instance 'c/regE/q_reg[11]' (FDCE) to 'c/regE/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'c/regM/q_reg[2]' (FDCE) to 'c/regM/q_reg[5]'
+WARNING: [Synth 8-3332] Sequential element (c/md/invalid_reg) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (zero_reg) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (cause_o_reg[6]) is unused and will be removed from module cp0_reg.
+WARNING: [Synth 8-3332] Sequential element (timer_int_o_reg) is unused and will be removed from module cp0_reg.
+WARNING: [Synth 8-3332] Sequential element (prid_o_reg[22]) is unused and will be removed from module cp0_reg.
+WARNING: [Synth 8-3332] Sequential element (prid_o_reg[31]) is unused and will be removed from module cp0_reg.
+WARNING: [Synth 8-3332] Sequential element (r3D/q_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r3D/q_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r3D/q_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r3D/q_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r3D/q_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r3D/q_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r3D/q_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r10E/q_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r10E/q_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r10E/q_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r9M/q_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (r9M/q_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (c/regE/q_reg[15]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regE/q_reg[13]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regE/q_reg[12]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regM/q_reg[10]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regM/q_reg[9]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regM/q_reg[8]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regM/q_reg[7]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regW/q_reg[10]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regW/q_reg[9]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regW/q_reg[8]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regW/q_reg[7]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regW/q_reg[6]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regW/q_reg[5]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regT/q_reg[1]) is unused and will be removed from module mips.
+WARNING: [Synth 8-3332] Sequential element (c/regT/q_reg[0]) is unused and will be removed from module mips.
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[31]' (FDCE) to 'dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[23]' (FDCE) to 'dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[27]' (FDCE) to 'dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[19]' (FDCE) to 'dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[29]' (FDCE) to 'dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[21]' (FDCE) to 'dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[25]' (FDCE) to 'dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[17]' (FDCE) to 'dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[30]' (FDCE) to 'dp/r3E/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[22]' (FDCE) to 'dp/r3E/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[26]' (FDCE) to 'dp/r3E/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[18]' (FDCE) to 'dp/r3E/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[28]' (FDCE) to 'dp/r3E/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[20]' (FDCE) to 'dp/r3E/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'dp/r3E/q_reg[24]' (FDCE) to 'dp/r3E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'dp/r8W/q_reg[14]' (FDR) to 'dp/r8W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dp/r8W/q_reg[15]' (FDR) to 'dp/r8W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dp/r8W/q_reg[12]' (FDR) to 'dp/r8W/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dp/r8W/q_reg[13]' (FDR) to 'dp/r8W/q_reg[31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dp/r8W/\q_reg[21] )
+WARNING: [Synth 8-3332] Sequential element (q_reg[21]) is unused and will be removed from module floprc__parameterized0__3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 761.914 ; gain = 478.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------+-----------+----------------------+---------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------+-----------+----------------------+---------------+
+|dp/rf       | rf_reg     | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 809.449 ; gain = 526.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 818.465 ; gain = 535.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------+-----------+----------------------+---------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------+-----------+----------------------+---------------+
+|dp/rf       | rf_reg     | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 890.609 ; gain = 607.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop dp/r9W/q_reg[31] is being inverted and renamed to dp/r9W/q_reg[31]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 890.609 ; gain = 607.188
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 890.609 ; gain = 607.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 890.609 ; gain = 607.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 890.609 ; gain = 607.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 890.609 ; gain = 607.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 890.609 ; gain = 607.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |    12|
+|2     |CARRY4  |   148|
+|3     |DSP48E1 |    10|
+|4     |LUT1    |   191|
+|5     |LUT2    |   635|
+|6     |LUT3    |   423|
+|7     |LUT4    |   307|
+|8     |LUT5    |   353|
+|9     |LUT6    |  1172|
+|10    |MUXF7   |     1|
+|11    |RAM32M  |    12|
+|12    |FDCE    |   423|
+|13    |FDPE    |     9|
+|14    |FDRE    |   445|
+|15    |FDSE    |     2|
+|16    |LD      |   385|
+|17    |LDC     |    66|
+|18    |IBUF    |    73|
+|19    |OBUF    |   138|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------------+----------------------------+------+
+|      |Instance           |Module                      |Cells |
++------+-------------------+----------------------------+------+
+|1     |top                |                            |  4805|
+|2     |  c                |controller                  |   124|
+|3     |    ad             |aludec                      |    16|
+|4     |    md             |maindec                     |    20|
+|5     |    regD           |flopr                       |     2|
+|6     |    regE           |flopenrc                    |    67|
+|7     |    regM           |flopenrc__parameterized0    |    14|
+|8     |    regW           |floprc                      |     5|
+|9     |  dp               |datapath                    |  4453|
+|10    |    r1E            |flopenrc__parameterized1_7  |    32|
+|11    |    r2E            |flopenrc__parameterized1_11 |    32|
+|12    |    memsel         |memsel                      |    32|
+|13    |    alu            |alu                         |   336|
+|14    |    cp0_reg        |cp0_reg                     |   310|
+|15    |    div            |div                         |   543|
+|16    |    flushmux       |mux2                        |    32|
+|17    |    forward2amux   |mux2_0                      |    16|
+|18    |    forward2bmux   |mux2_1                      |    32|
+|19    |    forwardaemux   |mux3                        |     3|
+|20    |    forwardamux    |mux2_2                      |    32|
+|21    |    forwardbemux   |mux3_3                      |    32|
+|22    |    forwardhilomux |mux3__parameterized0        |    64|
+|23    |    h              |hazard                      |    32|
+|24    |    hilo           |hilo_reg                    |    64|
+|25    |    pcadd1         |adder                       |     8|
+|26    |    pcadd2         |adder_4                     |    38|
+|27    |    pcmux          |mux2_5                      |    30|
+|28    |    pcreg          |flopenr                     |    95|
+|29    |    r10E           |flopenrc__parameterized2    |    10|
+|30    |    r10M           |flopenrc__parameterized1    |    69|
+|31    |    r10W           |floprc__parameterized0      |    34|
+|32    |    r1D            |flopenrc__parameterized1_6  |    64|
+|33    |    r1M            |flopenrc__parameterized1_8  |    56|
+|34    |    r1W            |floprc__parameterized0_9    |    64|
+|35    |    r2D            |flopenrc__parameterized1_10 |   266|
+|36    |    r2M            |flopenrc__parameterized1_12 |    67|
+|37    |    r2W            |floprc__parameterized0_13   |   273|
+|38    |    r3D            |flopenrc__parameterized2_14 |     2|
+|39    |    r3E            |flopenrc__parameterized1_15 |   207|
+|40    |    r3M            |flopenrc__parameterized3    |    15|
+|41    |    r3W            |floprc__parameterized1      |    13|
+|42    |    r4E            |flopenrc__parameterized3_16 |   387|
+|43    |    r4M            |flopenrc__parameterized4    |     2|
+|44    |    r4W            |floprc__parameterized2      |     1|
+|45    |    r5E            |flopenrc__parameterized3_17 |     8|
+|46    |    r5M            |flopenrc__parameterized5    |    64|
+|47    |    r5W            |floprc__parameterized3      |   152|
+|48    |    r6E            |flopenrc__parameterized3_18 |   127|
+|49    |    r6M            |flopenrc__parameterized2_19 |   108|
+|50    |    r6W            |floprc__parameterized2_20   |     2|
+|51    |    r7E            |flopenrc__parameterized4_21 |    33|
+|52    |    r7M            |flopenrc__parameterized4_22 |     2|
+|53    |    r8E            |flopenrc__parameterized1_23 |    64|
+|54    |    r8W            |floprc__parameterized0_24   |   117|
+|55    |    r9E            |flopenrc__parameterized4_25 |     1|
+|56    |    r9M            |flopenrc__parameterized2_26 |     8|
+|57    |    r9W            |floprc__parameterized0_27   |    74|
+|58    |    resmux         |mux2_28                     |    32|
+|59    |    rf             |regfile                     |    76|
+|60    |    sa1w           |flopenrc__parameterized3_29 |   215|
+|61    |    srcbmux        |mux2_30                     |    32|
+|62    |  dram_port        |dram_port                   |     4|
++------+-------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 890.609 ; gain = 607.188
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 103 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 890.609 ; gain = 268.777
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 890.609 ; gain = 607.188
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 695 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 15 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 463 instances were transformed.
+  LD => LDCE: 382 instances
+  LD => LDCE (inverted pins: G): 3 instances
+  LDC => LDCE: 66 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+243 Infos, 216 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 890.609 ; gain = 619.707
+INFO: [Common 17-1381] The checkpoint 'G:/jizu_project/project_summary/project_summary.runs/synth_1/mips.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mips_utilization_synth.rpt -pb soc_lite_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 890.609 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  3 23:49:27 2018...

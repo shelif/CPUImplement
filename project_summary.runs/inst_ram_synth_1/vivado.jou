@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Jan  3 23:06:08 2018
+# Process ID: 12188
+# Current directory: G:/jizu_project/project_summary/project_summary.runs/inst_ram_synth_1
+# Command line: vivado.exe -log inst_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source inst_ram.tcl
+# Log file: G:/jizu_project/project_summary/project_summary.runs/inst_ram_synth_1/inst_ram.vds
+# Journal file: G:/jizu_project/project_summary/project_summary.runs/inst_ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source inst_ram.tcl -notrace
